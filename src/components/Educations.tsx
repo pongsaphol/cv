@@ -20,9 +20,9 @@ export const Educations = () => {
               <Card {...education}>
                 <Heading size="md">{education.name}</Heading>
                 <Text color="gray.500">{education.year}</Text>
-                <Text color="gray.800" mt={2}>
+                {/* <Text color="gray.800" mt={2}>
                   {education.desc}
-                </Text>
+                </Text> */}
               </Card>
             </Box>
           ))}
