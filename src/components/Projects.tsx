@@ -18,6 +18,11 @@ export const Projects = () => {
           {projects.map((project: IProjects) => (
             <Box width={['100%', 1 / 2, 1 / 3, 1 / 4]} px={5} py={3}>
               <Card {...project}>
+                {project.highlight && (
+                  <Text color="red.500" fontSize="sm">
+                    {project.highlight}
+                  </Text>
+                )}
                 <Heading size="md">{project.name}</Heading>
                 {project.link.map((link: ILink) => (
                   <a href={link.href} target="_blank">

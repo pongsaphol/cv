@@ -6,6 +6,7 @@ export interface IProjects {
   name: string
   link: ILink[]
   desc: string
+  highlight?: string
 }
 
 export const projects: IProjects[] = [
@@ -54,5 +55,36 @@ export const projects: IProjects[] = [
       },
     ],
     desc: 'Coding solutions to Thai competitive programming problems',
+  },
+  {
+    name: 'cv',
+    link: [
+      {
+        name: 'Github',
+        href: 'https://github.com/win11905/cv',
+      },
+    ],
+    desc: 'A curriculum vitae of me, built with next-js',
+    // highlight: 'THIS SITE',
+  },
+  {
+    name: 'submission',
+    link: [
+      {
+        name: 'Github',
+        href: 'https://github.com/win11905/submission',
+      },
+    ],
+    desc: 'My competitive programming solution codes',
+  },
+  {
+    name: 'problem-template',
+    link: [
+      {
+        name: 'Github',
+        href: 'https://github.com/win11905/problem-template',
+      },
+    ],
+    desc: 'A template for problem designing for competitive programming',
   },
 ]

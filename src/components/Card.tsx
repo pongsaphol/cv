@@ -3,9 +3,13 @@ import { Box, PseudoBox } from '@chakra-ui/core'
 
 const boxConfig = {
   boxShadow: 'md',
-  rounded: 'lg',
+  rounded: 'md',
   _hover: { boxShadow: 'xl' },
   transition: '0.2s',
+}
+
+const padding = {
+  p: 6,
 }
 
 export const Card = (props) => {
@@ -18,10 +22,10 @@ export const Card = (props) => {
             <source type="image/jpeg" srcSet={`/${props.img}.jpg`} />
             <img src={`/${props.img}.jpg`} alt="" />
           </picture>
-          <Box p={5}>{props.children}</Box>
+          <Box {...padding}>{props.children}</Box>
         </PseudoBox>
       ) : (
-        <PseudoBox p={5} {...boxConfig}>
+        <PseudoBox {...padding} {...boxConfig}>
           {props.children}
         </PseudoBox>
       )}
