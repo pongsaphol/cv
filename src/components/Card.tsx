@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, PseudoBox } from '@chakra-ui/core'
+import Image from 'next/image'
 
 const boxConfig = {
   boxShadow: 'md',
@@ -17,11 +18,7 @@ export const Card = (props) => {
     <React.Fragment>
       {props.img ? (
         <PseudoBox {...boxConfig}>
-          <picture>
-            <source type="image/webp" srcSet={`/${props.img}.webp`} />
-            <source type="image/jpeg" srcSet={`/${props.img}.jpg`} />
-            <img src={`/${props.img}.jpg`} alt="" />
-          </picture>
+          <Image src={`/${props.img}.jpg`} alt="" unsized />
           <Box {...padding}>{props.children}</Box>
         </PseudoBox>
       ) : (

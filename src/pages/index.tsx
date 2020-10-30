@@ -1,5 +1,4 @@
-import React from 'react'
-import { Flex, useColorMode, Button } from '@chakra-ui/core'
+import { Flex } from '@chakra-ui/core'
 import { Contact } from '../components/Contact'
 import { Award } from '../components/Award'
 import { Activity } from '../components/Activity'

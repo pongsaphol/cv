@@ -1,11 +1,9 @@
-import React from 'react'
-
 import Document, {
   Head,
   Html,
   Main,
   NextScript,
-  DocumentContext
+  DocumentContext,
 } from 'next/document'
 
 class NextDocument extends Document {
@@ -28,7 +26,7 @@ class NextDocument extends Document {
           <meta name="theme-color" content="black" />
           <meta property="og:title" content="PONGSAPHOL" />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="http://cv.pongsaphol.com" />
+          <meta property="og:url" content="https://pongsaphol.com" />
         </Head>
         <body>
           <Main />

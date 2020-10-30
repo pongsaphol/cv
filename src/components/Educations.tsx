@@ -11,12 +11,12 @@ export const Educations = () => {
       <Flex
         direction="column"
         mt={6}
-        width={[23 / 24, 23 / 24, 22 / 24, 16 / 24]}
+        width={[23 / 24, 23 / 24, 22 / 24, 22 / 24]}
         mx="auto"
       >
         <Flex flexWrap="wrap" alignItems="center">
           {educations.map((education: IEducations) => (
-            <Box width={['100%', '100%', 1 / 2, 1 / 2]} px={5} py={3}>
+            <Box width={['100%', '100%', 1 / 3, 1 / 3]} px={5} py={3}>
               <Card {...education}>
                 <Heading size="md">{education.name}</Heading>
                 <Text color="gray.500">{education.year}</Text>
